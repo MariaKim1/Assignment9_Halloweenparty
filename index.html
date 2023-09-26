@@ -7,13 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Joti+One&family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Spooky season is here</title>
 </head>
 <body>
     <div class="heading">
-        <h1>SPOOKY SEASON IS HERE... <span><img class="ghost_svg" src="images/ghost.svg"></span></h1>    
+        <h1>SPOOKY SEASON IS HERE... <span><img id="ghost" src="images/ghost.svg" class="animate__animated animate__pulse"></span></h1>    
     </div>
 
+<!-- ========= CARD WHAT? - ENVELOPE ======= -->
     <div class="card">
         <div class="card__what">
             <!--<img class="envelope" src="images/mkp_envelope.svg#mkp_envelope" alt="envelope">--> 
@@ -26,6 +28,7 @@
             </div>
         </div>
 
+<!-- ========= CARD WHEN? - CLOCK ======= -->
         <div class="card__when">
             <svg class="clock" width="200" height="200" viewbox="0 0 200 200">
                 <circle cx="100" cy="100" r="90" fill="black"></circle>
@@ -36,7 +39,8 @@
                 <p>Saturday 28th of October at 14.00 until bedtime</p>
             </div>
         </div>
-        
+
+<!-- ========= CARD WHERE? - PIN ======= -->
         <div class="where">
             <img class="pin" src="images/pin.svg" alt="pin">
            <div>
@@ -44,7 +48,8 @@
                 <p>Saturday 28th of October at 14.00 until bedtime</p>
             </div>
         </div>
-        
+
+<!-- ========= CARD HOW? - QUESTION ======= -->
         <div class="how">
             <svg>
                 <use id="question" xlink:href="images/question.svg#question"></use>

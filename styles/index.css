@@ -4,7 +4,9 @@ body {
     margin: auto;
     padding: 50px;
     background-color: #F3C00C;
+}
 
+/* ========= CARD GENERAL STYLING: placment + size styles  ======= */
 
 .card {
     width: 300px;
@@ -15,33 +17,33 @@ body {
     text-align: center;
 }
 
+/* ========= CARD SPECIFIC STYLING + ANIMATIONS ======= */
+
 .card__what {
     background-color:rgb(212, 123, 13);
     border-radius: 20px;
     border-color: rgba(214, 25, 138, 0.91);
-   
 }
 
-.envelope {
-    width: 30%;
-}
-
-.card__when: {
-    background-color:rgb(212, 123, 13);
+.card__when {
+    background-color: rgb(212, 123, 13);
     border-radius: 20px;
     border-color: rgba(214, 25, 138, 0.91);
 }
-.card__where: {
+
+.card__where {
     background-color:rgb(212, 123, 13);
     border-radius: 20px;
     border-color: rgba(214, 25, 138, 0.91);
 }
 
-.card__how: {
+.card__how {
     background-color:rgb(212, 123, 13);
     border-radius: 20px;
     border-color: rgba(214, 25, 138, 0.91);
 }
+
+/* ========= GENERAL TEXT STYLING ======= */
 
 h1 {
     color: black;
@@ -50,12 +52,12 @@ h1 {
     font-weight: 400;
     line-height: 47px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: center;   
 }
 
 h3 {
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Joti One';
     font-size: 25px;
 }
 
@@ -65,14 +67,23 @@ p {
     font-size: 20px;
 }
 
-}.ghost_svg {
+/* ========= Heading GHOST ANIMATION: pre-made svg + pre-made animation ======= */
+
+#ghost {
     width: 5%;
 }
+
+.animate__animated {
+    animation: infinite;
+}
+
+/* ========= Where? PIN SVG: pre-made svg + pre-made animation ======= */
 
 .pin {
     max-width: 40%;
 }
 
+/* ========= How? QUESTION SVG: pre-made svg + pre-made animation ======= */
 #question {
     margin: 0px;
     display: flex;
