@@ -8,24 +8,27 @@ body {
 
 /* ========= CARD GENERAL STYLING: placment + size styles  ======= */
 
-.card {
+/* varför svarar bara envelope kortet på in css? Har testat m div + class, section osv*/
+section {
     width: 300px;
     height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+    margin: 10px;
+    
+    background-color:rgb(212, 123, 13);
+    border-radius: 50px;
+    border: solid 4px rgba(214, 25, 138, 0.91);
 }
 
 /* ========= CARD SPECIFIC STYLING + ANIMATIONS ======= */
 
 .card__what {
-    background-color:rgb(212, 123, 13);
-    border-radius: 50px;
-    border-color: rgba(214, 25, 138, 0.91);
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+   
+   
+  
 }
 
 #mkp__envelope {
@@ -50,6 +53,7 @@ body {
     border-radius: 20px;
     border-color: rgba(214, 25, 138, 0.91);
 }
+
 
 /* ========= GENERAL TEXT STYLING ======= */
 
@@ -109,23 +113,5 @@ button:hover {
 
 .animate__animated {
     animation: infinite;
-}
-
-/* ========= Where? PIN SVG: pre-made svg + pre-made animation ======= */
-
-.pin {
-    max-width: 30%;
-}
-
-/* ========= How? QUESTION SVG: pre-made svg + pre-made animation ======= */
-#question {
-    margin: 0px;
-    display: flex;
-    justify-content: start;
-
-}
-
-.card__clock {
-    width: 
 }
 
