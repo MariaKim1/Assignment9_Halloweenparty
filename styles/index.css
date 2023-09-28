@@ -6,65 +6,71 @@ body {
     background-color: #F3C00C;
 }
 
-/* ========= CARD GENERAL STYLING: placment + size styles  ======= */
+/* ========= .CARD GENERAL STYLING: placment + size styles  ======= */
 
-/* varför svarar bara envelope kortet på in css? Har testat m div + class, section osv*/
-section {
-    width: 300px;
-    height: 500px;
+.card {
+    max-width: 300px;
+    min-height: 500px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* No effect...*/
     text-align: center;
-    margin: 10px;
-    
-    background-color:rgb(212, 123, 13);
+}
+
+
+/* ========= .CARD OTHER DESIGN N DETAIL STYLING ======= */
+
+.card__what, .card__when, .card__where, .card__how {
+    background-color:rgb(229, 133, 15);
     border-radius: 50px;
-    border: solid 4px rgba(214, 25, 138, 0.91);
-}
-
-/* ========= CARD SPECIFIC STYLING + ANIMATIONS ======= */
-
-.card__what {
+    border: dotted 5px rgb(169, 12, 12);
    
-   
-  
 }
 
-#mkp__envelope {
-    justify-content: center;
-    width: 20%;
+.envelope:hover, .clock:hover, .pin:hover, .question:hover {
+    /*background-color: rgba(88, 200, 20, 1);
+    border: solid 4px rgba(58, 141, 8, 1);
+    transition: all 1s ease-in-out;  
+    transition-delay: 0,5s;*/
+    cursor: pointer; 
 }
 
-.card__when {
-    background-color: rgb(212, 123, 13);
-    border-radius: 20px;
-    border-color: rgba(214, 25, 138, 0.91);
+.envelope, .clock, .pin, .question {
+    width: 50%;
+    height: 50%;
+    animation: cardicons 3s ease infinite;
+    animation-direction: reverse;
+    animation-fill-mode: none;
 }
 
-.card__where {
-    background-color:rgb(212, 123, 13);
-    border-radius: 20px;
-    border-color: rgba(214, 25, 138, 0.91);
+@keyframes cardicons {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.1)}
+    100% {transform: scale(1)}
 }
-
-.card__how {
-    background-color:rgb(212, 123, 13);
-    border-radius: 20px;
-    border-color: rgba(214, 25, 138, 0.91);
-}
-
 
 /* ========= GENERAL TEXT STYLING ======= */
 
 h1 {
     color: black;
-    font-size: 35px;
+    font-size: 50px;
     font-family:'Joti One';
     font-weight: 400;
     line-height: 47px;
     letter-spacing: 0em;
-    text-align: center;   
+    text-align: center;  
+    padding: 40px; 
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    font-family:'Joti One';
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;  
+    padding: none; 
 }
 
 h3 {
@@ -80,7 +86,13 @@ p {
     padding: 14px;
 }
 
-/* ========= BUTTON RSVP - STYLING ======= */
+/* ========= RSVP-section and BUTTON STYLING ======= */
+
+.rsvp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .rsvp__button {
     width: 250px;
@@ -89,20 +101,21 @@ p {
     border-radius: 30px;
     text-align: center;
     font-family: 'Joti One';
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     background-color: rgba(58, 141, 8, 1);
-    margin: 15px;
-
+    border: solid black;
+    margin-top: 50px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color:  rgba(88, 200, 20, 1);
+    background-color: rgba(88, 200, 20, 1);
     border: solid 4px rgba(58, 141, 8, 1);
-    transition: all 1s ease-in-out;   
+    transition: all 1s ease-in-out;  
+    transition-delay: 0,5s; 
 }
 
 /* ========= Heading GHOST ANIMATION: pre-made svg + pre-made animation ======= */
@@ -111,7 +124,4 @@ button:hover {
     width: 5%;
 }
 
-.animate__animated {
-    animation: infinite;
-}
 
